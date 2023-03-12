@@ -30,3 +30,5 @@ Exec=/home/{user}/{path/to/release}/notepad
 Name=QT Notepad
 Icon=/home/{user}/{path/to/release}/Pencil.png
 ```
+
+To use the terminal feauture, add the app to your system's PATH.
