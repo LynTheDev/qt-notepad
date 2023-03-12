@@ -2,7 +2,9 @@
 
 My first qt app! Simple notepad application.
 
-![Funny](./git_assets/cpp_lol.png)
+![Screenshot](./git_assets/ScreenShot.png)
+
+![Opening From Terminal](./git_assets/open_from_terminal.png)
 
 ## Installation:
 

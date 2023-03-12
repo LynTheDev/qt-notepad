@@ -135,3 +135,16 @@ void MainWindow::on_actionRedo_triggered() {
 void MainWindow::on_actionUndo_triggered() {
     ui->editor->undo();
 }
+
+void MainWindow::open_window(const char *path) {
+    QFile file(path);
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        openFile = path;
+        setWindowTitle(openFile);
+        ui->editor->setPlainText(file.readAll());
+    } else {
+        ui->editor->setPlainText("file not found.");
+    }
+
+    file.close();
+}

@@ -18,6 +18,8 @@ Q_OBJECT
 public:
     explicit MainWindow(QWidget *parent = nullptr);
 
+    void open_window(const char *path);
+
     ~MainWindow() override;
 
 private slots:
